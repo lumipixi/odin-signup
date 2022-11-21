@@ -2,11 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Odin Signup!</title>
+  <title>Fake Registration Page!</title>
   <link href="./styles.css" rel="stylesheet">
-  <script defer src="./script.js">
+  </script defer src="./script.js">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="sidebar">
+      <p>ODIN</p>
+    </div>
+    <div class="main">
+      <p class="pitch-text">
+        Did you know you can do 99.9% of everyday computer tasks from the comfort of your keyboard? Would you like to save your wrists and arms from injuries caused by repetitive mouse usage? We can help! Learn how to supercharge your computer with a wrist and productivity friendly environment.
+        <br>
+        <br>
+        Sign up for our master class to get started!
+      </p>
+      <div class="form-container">
+        <form class="signup-form" action="https://httpbin.org/post" method="post">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <div class="form-row">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname">
+            </div>
+            <div class="form-row">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+              <label for="tel">Phone Number</label>
+              <input type="tel" id="tel" name="tel" pattern="[\+]?[\d]+" title="Your phone number may only contain numeric characters.">
+            </div>
+            <div class="form-row">
+              <label for="firstpassword">Password</label>
+              <input type="password" id="firstpassword" name="firstpassword" minlength="8">
+            </div>
+            <div class="form-row">
+              <label for="secondpassword">Confirm Password</label>
+              <input type="password" id="secondpassword" name="secondpassword">
+            </div>
+            <div class="form-row">
+              <button type="submit" id="submit" name="submit">Create Account</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
