@@ -20,45 +20,44 @@
     </div>
     <div class="main">
       <p class="pitch-text">
-        Do you work using a computer all day? Are you a programmer? Do your wrist and arms hurt constantly? If any apply to you, try switching to a keyboard-driven workflow. Your keyboard is a versatile tool, and we are here to teach you how to leverage its wrist sparing, productivity boosting power!
+        Do you work using a computer all day? Are your wrists making you suffer? Switch to a keyboard-driven workflow and save your wrists! We will teach you and make you more productive along the way.
         <br>
         <br>
         Sign up for our class to get started!
       </p>
-      <div class="form-container">
-        <form class="signup-form" action="https://httpbin.org/post" method="post">
-          <fieldset>
-            <legend>Let's do this!</legend>
-            <div class="form-row">
-              <label for="firstname">First Name</label>
-              <input type="text" id="firstname" name="firstname">
-            </div>
-            <div class="form-row">
-              <label for="lastname">Last Name</label>
-              <input type="text" id="lastname" name="lastname">
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
-            </div>
-            <div class="form-row">
-              <label for="tel">Phone Number</label>
-              <input type="tel" id="tel" name="tel" pattern="[\+]?[\d]+" title="Your phone number may only contain numeric characters.">
-            </div>
-            <div class="form-row">
-              <label for="firstpassword">Password</label>
-              <input type="password" id="firstpassword" name="firstpassword" minlength="8" maxlength="64">
-            </div>
-            <div class="form-row">
-              <label for="secondpassword">Confirm Password</label>
-              <input type="password" id="secondpassword" name="secondpassword">
-            </div>
-            <div class="form-row">
-              <button type="submit" id="submit" name="submit">Create Account</button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
+      <form class="signup-form" action="https://httpbin.org/post" method="post">
+        <div class="form-inputs">
+          <p>Let's do this!</p>
+          <div class="form-row">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname">
+          </div>
+          <div class="form-row">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-row">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" name="tel" pattern="[\+]?[\d]+" title="Your phone number may only contain numeric characters.">
+          </div>
+          <div class="form-row">
+            <label for="firstpassword">Password</label>
+            <input type="password" id="firstpassword" name="firstpassword" minlength="8" maxlength="64">
+          </div>
+          <div class="form-row">
+            <label for="secondpassword">Confirm Password</label>
+            <input type="password" id="secondpassword" name="secondpassword">
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" id="submit" name="submit">Create Account</button>
+        </div>
+      </form>
+      <p class="login-text">Already have an account?<a href="https://example.com">Log in instead</a></p>
     </div>
   </div>
 </body>
