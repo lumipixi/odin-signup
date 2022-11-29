@@ -110,8 +110,10 @@ body {
   color: #333;
 }
 
-.main .form-row input[required] + label {
+.main .form-row input[required] + label::after {
+  content: " *";
   color: red;
+  font-size: 1.5rem;
 }
 
 .main .form-row input {
@@ -201,7 +203,21 @@ body {
   row-gap: 2rem;
 }
 
+/* Allow placing labels BELOW the input and re-order them with flexbox */
+/* This allows for input[required] + label::after styling. */
 .main .form-row-field {
   display: flex;
   flex-flow: column wrap;
+}
+
+.main .form-row-field label {
+  order: 1;
+}
+
+.main .form-row-field input {
+  order: 2;
+}
+
+.main .form-row-field .password-error {
+  order: 3;
 }

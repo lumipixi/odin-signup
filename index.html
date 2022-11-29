@@ -32,33 +32,33 @@
           <div class="form-inputs">
             <div class="form-row">
               <div class="form-row-field">
-                <label for="firstname">First Name</label>
                 <input type="text" id="firstname" name="firstname" placeholder="Jane" required>
+                <label for="firstname">First Name</label>
               </div>
               <div class="form-row-field">
-                <label for="lastname">Last Name</label>
                 <input type="text" id="lastname" name="lastname" required placeholder="Doe">
+                <label for="lastname">Last Name</label>
               </div>
             </div>
             <div class="form-row">
               <div class="form-row-field">
+                <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]{2,61}(?:[a-zA-Z0-9-.][a-zA-Z0-9]{2,61})*$" title="Example: janedoe@example.com" placeholder="janedoe@example.com" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]{2,61}(?:[a-zA-Z0-9-.][a-zA-Z0-9]{2,61})*$" title="Example: janedoe@example.com" placeholder="janedoe@example.com">
               </div>
               <div class="form-row-field">
-                <label for="tel">Phone Number</label>
                 <input type="tel" id="tel" name="tel" pattern="[\+]?[\d]+" title="Your phone number may only contain numeric characters." placeholder="40412345678">
+                <label for="tel">Phone Number</label>
               </div>
             </div>
             <div class="form-row passwords-row">
               <div class="form-row-field">
-                <label for="firstpassword">Password</label>
                 <input type="password" id="firstpassword" name="firstpassword" minlength="8" maxlength="64" required placeholder="">
+                <label for="firstpassword">Password</label>
                 <div class="password-error">&nbsp;</div>
               </div>
               <div class="form-row-field">
-                <label for="secondpassword">Confirm Password</label>
                 <input type="password" id="secondpassword" name="secondpassword" minlength="8" maxlength="64" required placeholder="">
+                <label for="secondpassword">Confirm Password</label>
               </div>
             </div>
           </div>
