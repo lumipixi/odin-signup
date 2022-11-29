@@ -25,6 +25,8 @@ passwordsRow.addEventListener("input", () => {
         firstpassword.classList.add("pwd-match");
         secondpassword.classList.remove("pwd-mismatch");
         secondpassword.classList.add("pwd-match");
+      } else {
+        passwordError.textContent = "Must have at least 8 characters"
       }
     }
   }
