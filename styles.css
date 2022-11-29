@@ -48,11 +48,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 14vh;
+  margin-top: 20vh;
   column-gap: 1rem;
   font-family: "Rubik Glitch", cursive;
   font-size: 7rem;
-  line-height: 15rem;
+  line-height: 18rem;
   background-color: rgba(0, 0, 0, 0.45);
 }
 
