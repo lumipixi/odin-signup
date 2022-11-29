@@ -132,7 +132,7 @@ body {
   box-shadow: 0 0 0.5rem 0 skyblue;
 }
 
-.main .form-row input:user-valid:not(:focus):not([type="password"]):not(:placeholder-shown) {
+.main .form-row input:valid:not(:focus):not([type="password"]):not(:placeholder-shown) {
   border-color: green;
   box-shadow: 0 0 0.5rem 0 green;
 }
