@@ -110,6 +110,10 @@ body {
   color: #333;
 }
 
+.main .form-row input[required] + label {
+  color: red;
+}
+
 .main .form-row input {
   width: 20vw;
   border: solid 1px #CCC;
@@ -141,8 +145,10 @@ body {
   box-shadow: 0 0 0.5rem 0 green;
 }
 
-/* this selector is to be used in javascript */
-/* .main .form-row input[type="password"] */
+.main .form-row input.pwd-mismatch {
+  border-color: red;
+  box-shadow: 0 0 0.5rem red;
+}
 
 .main button {
   margin: 3.5rem 5vw 0;
@@ -160,6 +166,10 @@ body {
 .main button:hover,
 .main button:focus {
   background-color: #427a48;
+}
+
+.main button:disabled {
+  background-color: lightgray;
 }
 
 .main .login-text {
