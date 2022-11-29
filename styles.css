@@ -152,6 +152,11 @@ body {
   box-shadow: 0 0 0.5rem red;
 }
 
+.main .form-row-field .password-error {
+  color: red;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
 .main button {
   margin: 3.5rem 5vw 0;
   padding: 1.4rem 5ch;
