@@ -111,17 +111,38 @@ body {
 }
 
 .main .form-row input {
-  border: solid 1px #CCC;
-  line-height: 3rem;
-  font-size: 1.6rem;
   width: 20vw;
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-top: 0.3rem;
+  padding-left: 1rem;
+  outline: none;
 }
 
-.main .form-row input:invalid {
-
+.main .form-row input:focus {
+  border-color: skyblue;
+  box-shadow: 0 0 0.5rem 0 skyblue;
 }
 
+.main .form-row input:user-valid:not(:focus):not([type="password"]):not(:placeholder-shown) {
+  border-color: green;
+  box-shadow: 0 0 0.5rem 0 green;
+}
 
+.main .form-row input:invalid:not(:focus):not(:placeholder-shown){
+  border-color: red;
+  box-shadow: 0 0 0.5rem 0 red;
+}
+
+.main .form-row input.pwd-match {
+  border-color: green;
+  box-shadow: 0 0 0.5rem 0 green;
+}
+
+/* this selector is to be used in javascript */
+/* .main .form-row input[type="password"] */
 
 .main button {
   margin: 3.5rem 5vw 0;
