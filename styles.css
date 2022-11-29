@@ -117,6 +117,9 @@ body {
   width: 20vw;
 }
 
+.main .form-row input:invalid {
+
+}
 
 
 
