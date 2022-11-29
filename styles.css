@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%; /* equivalent to 10px */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Ubuntu, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -34,7 +34,7 @@ body {
 }
 
 .sidebar a {
-  color: white
+  color: white;
 }
 
 .sidebar .sidebar-logo-credits {
@@ -58,8 +58,9 @@ body {
 
 .brand .brand-logo {
   height: 12rem;
-  filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(146deg) brightness(104%) contrast(103%);}
-
+  filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(146deg)
+    brightness(104%) contrast(103%);
+}
 
 .main {
   display: flex;
@@ -68,18 +69,62 @@ body {
   background-color: rgb(248, 248, 248);
 }
 
-.main .pitch-text {
-  padding-left: 5vw;
-  padding-right: 10vw;
+.main .pitch-text,
+.main .instruction-text {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3.2rem;
 }
 
-.main .form-inputs {
+.main .form-contents {
   background-color: white;
   box-shadow: rgb(200, 200, 200) 0 8px 10px -5px;
 }
 
+/* Margins for all the main content */
+.main .pitch-text,
+.main .form-contents,
+.main .login-text {
+  padding-left: 5vw;
+  padding-right: 10vw;
+}
 
+.main .form-contents {
+  padding-bottom: 3rem;
+}
+.main button {
+  margin-left: 5vw;
+}
+
+/* Flex layout for the form, excluding the button */
+.main .form-inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.main .form-row {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 7rem;
+}
+
+.main .form-row-field {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Style for the form */
+.main .instruction-text {
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.main .form-row label {
+  /* text-transform: uppercase; */
+  font-size: 1.8rem;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  color: #333;
+}
 
