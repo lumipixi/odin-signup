@@ -31,6 +31,7 @@ body {
   color: white;
   background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
+  width: 20vw;
 }
 
 .sidebar a {
